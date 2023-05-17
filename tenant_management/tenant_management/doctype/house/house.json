@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-17 20:07:10.854386",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "house_address",
+  "bedrooms",
+  "agent_id",
+  "owner_id",
+  "document"
+ ],
+ "fields": [
+  {
+   "fieldname": "house_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "House Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bedrooms",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bedrooms",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agent_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Agent ID",
+   "options": "Agent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "owner_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Owner ID",
+   "options": "Owner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Attach",
+   "label": "Document",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-17 20:33:59.765325",
+ "modified_by": "Administrator",
+ "module": "Tenant Management",
+ "name": "House",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Owner",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agent",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tenant",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

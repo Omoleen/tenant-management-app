@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-17 20:12:23.396869",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rental_amount",
+  "billing_date",
+  "rental_period_start",
+  "rental_period_end",
+  "rental_agreement_id",
+  "tenant_id",
+  "agent_id",
+  "is_fully_paid"
+ ],
+ "fields": [
+  {
+   "fieldname": "rental_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rental Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "billing_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Billing Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rental_period_start",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Rental Period Start",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rental_period_end",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Rental Period End",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rental_agreement_id",
+   "fieldtype": "Link",
+   "label": "Rental Agreement ID",
+   "options": "Rental Agreement",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tenant_id",
+   "fieldtype": "Link",
+   "label": "Tenant ID",
+   "options": "Tenant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agent_id",
+   "fieldtype": "Link",
+   "label": "Agent ID",
+   "options": "Agent",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_fully_paid",
+   "fieldtype": "Check",
+   "label": "is Fully Paid"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-17 20:33:02.098644",
+ "modified_by": "Administrator",
+ "module": "Tenant Management",
+ "name": "Billing",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Owner",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agent",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tenant",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

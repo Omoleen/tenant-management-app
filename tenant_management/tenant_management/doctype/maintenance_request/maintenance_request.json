@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-17 20:37:08.458155",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "request",
+  "tenant_id",
+  "agent_id",
+  "house_id",
+  "rental_agreement_id",
+  "comment"
+ ],
+ "fields": [
+  {
+   "fieldname": "request",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Request",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tenant_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tenant ID",
+   "options": "Tenant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agent_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Agent ID",
+   "options": "Agent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "house_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "House ID",
+   "options": "House",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rental_agreement_id",
+   "fieldtype": "Link",
+   "label": "Rental Agreement ID",
+   "options": "Rental Agreement",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Data",
+   "label": "Comment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-17 20:37:08.458155",
+ "modified_by": "Administrator",
+ "module": "Tenant Management",
+ "name": "Maintenance Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Owner",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tenant",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agent",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
