@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Tenant Management Application</title>
-</head>
 <body>
   <h1>Tenant Management Application</h1>
   <p>Welcome to the Tenant Management Application! This application is built using the Frappe framework and helps you manage tenants and their related information.</p>
@@ -22,7 +19,11 @@
   <ol start="1">
     <li>Install the application:</li>
   </ol>
-  <pre><code>cd frappe-bench<br>bench get-app tenant_management https://github.com/Omoleen/tenant-management-app.git<br>bench --site your-site-name install-app tenant_management</code></pre>
+  <pre><code>
+  cd frappe-bench<br>
+  bench get-app tenant_management https://github.com/Omoleen/tenant-management-app.git<br>
+  bench --site your-site-name install-app tenant_management
+  </code></pre>
   
   <p>Replace <code>your-site-name</code> with the desired site name for your application.</p>
   
