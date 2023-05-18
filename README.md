@@ -1,43 +1,39 @@
-## Tenant Management Application 
-
-#### Introduction
-This document outlines the design for a Tenant Management Application. The application is built using the Frappe framework and allows agents to manage houses, tenants, owners of rented properties, rental agreements, billing, maintainance requests, and payment of rent.
-#### Scope
-This application will be used by agents to manage houses and tenants. It will allow agents to capture information about the houses and tenants they are managing. The application will also allow agents to generate rental agreements, bill tenants for rent, track maintenance requests made by tenants and track payments made by tenants.
-System Architecture
-The Tenant Management Application will be built using the Frappe framework. The application will be hosted on a cloud server and can be accessed by agents using a web browser.
-#### Database Design
-The following are the doctypes that will be used to store data for this application:
-- House
-- Tenant
-- Owner
-- Agent
-- Rental Agreement
-- Billing
-- Payment
-- Maintenance Request
-- Rents Paid
-#### User Roles and Permissions
-The following roles and permissions will be implemented in this application:
-- Owner: can view details of their rented properties and payment history.
-- Tenant: can view details of their rental agreement, billing, and payment history. A tenant can also create a maintenance request,
-- Agent: can view and manage all properties, tenants, owners, rental agreements, billing, maintenance requests and payments.
-#### Workflow
-The following workflow were implemented in the Tenant Management Application:
-- Agent creates a house record
-- Agent creates a tenant record and assigns them to a house
-- Agent creates an owner record and assigns the house to the owner
-- Agent creates a rental agreement between the tenant, himself and the owner
-- Agent creates a billing record for the tenant
-- Tenant pays rent
-- Agent adds record of payment
-- Agent marks the billing record as paid
-- Tenant requests for maintenance
-- Agent makes comment before or after maintenance has been made
-#### Authors
-- Omole Emmanuel
-#### Reviewers
-- Victor Maduforo
-#### License
-
-- MIT
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tenant Management Application</title>
+</head>
+<body>
+  <h1>Tenant Management Application</h1>
+  <p>Welcome to the Tenant Management Application! This application is built using the Frappe framework and helps you manage tenants and their related information.</p>
+  
+  <h2>Prerequisites</h2>
+  <p>Before you can set up the Tenant Management Application, ensure that you have the following dependencies installed on your computer:</p>
+  <ul>
+    <li>Python 3.7 or higher</li>
+    <li>Node.js (version specified in <code>package.json</code>)</li>
+    <li>Redis</li>
+    <li>MariaDB or MySQL</li>
+  </ul>
+  
+  <h2>Installation</h2>
+  <p>Follow the steps below to set up the application on your local machine:</p>
+  
+  <ol start="1">
+    <li>Install the application:</li>
+  </ol>
+  <pre><code>cd frappe-bench<br>bench get-app tenant_management https://github.com/Omoleen/tenant-management-app.git<br>bench --site your-site-name install-app tenant_management</code></pre>
+  
+  <p>Replace <code>your-site-name</code> with the desired site name for your application.</p>
+  
+  <ol start="2">
+    <li>Start the development server:</li>
+  </ol>
+  <pre><code>bench start</code></pre>
+  
+  <p>The Tenant Management Application should now be accessible at <a href="http://localhost:8000">http://localhost:8000</a>. You can log in using the administrator credentials you specified during the installation.</p>
+  
+  <h2>License</h2>
+  <p><a href="LICENSE">MIT License</a></p>
+</body>
+</html>
